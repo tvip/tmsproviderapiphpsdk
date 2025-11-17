@@ -44,6 +44,11 @@ class TmsChannel extends TmsBaseModel
      */
     public $time_shift_depth = null;
 
+    /**
+     * @var array
+     */
+    public $favorites = [];
+    
     public function serialize($jsonData)
     {
         $channel = json_decode($jsonData);
